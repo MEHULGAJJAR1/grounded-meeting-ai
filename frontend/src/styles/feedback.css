@@ -1,0 +1,216 @@
+.empty-state {
+  padding: 45px 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.empty-state.compact {
+  padding: 27px 19px;
+}
+.empty-icon {
+  height: 57px;
+  width: 57px;
+  border: 1px solid #e3eeda;
+  background: #f3f8ec;
+  border-radius: 13px;
+  color: var(--muted);
+  display: grid;
+  place-items: center;
+  margin-bottom: 21px;
+}
+.empty-state.compact .empty-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 9px;
+  margin-bottom: 14px;
+}
+.empty-state h3 {
+  font-size: 17px;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+.empty-state.compact h3 {
+  font-size: 12px;
+}
+.empty-state p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 10px auto 20px;
+  max-width: 470px;
+}
+.empty-state.compact p {
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+.empty-actions {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.error-state {
+  background: #fff9f2;
+  border: 1px solid #f1e7d5;
+  border-radius: 9px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 15px 0;
+  color: var(--muted);
+}
+.error-state > svg {
+  flex-shrink: 0;
+}
+.error-state > div {
+  flex: 1;
+}
+.error-state h3 {
+  font-size: 13px;
+  color: var(--text);
+}
+.error-state p {
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 7px;
+  color: var(--muted);
+}
+.error-state .btn {
+  font-size: 10px;
+}
+.skeleton {
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ebf0e6 25%, #f5f8f0 40%, #ebf0e6 65%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+  margin-bottom: 18px;
+}
+.metric-grid .skeleton {
+  margin: 0;
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+.toast-stack {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  max-width: 440px;
+}
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 15px;
+  border-radius: 9px;
+  border: 1px solid #e5eddc;
+  background: #fff;
+  box-shadow: 0 5px 23px #4d652519;
+  color: var(--muted);
+  font-size: 11px;
+  animation: page-in 0.2s ease-out;
+}
+.toast > svg {
+  flex-shrink: 0;
+}
+.toast > span {
+  line-height: 1.6;
+  color: var(--muted);
+}
+.toast .icon-btn {
+  padding: 3px;
+  margin-left: 5px;
+}
+.toast.error {
+  border-color: #f0e4d1;
+  color: var(--muted);
+}
+.toast.error > span {
+  color: var(--muted);
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #162a1cc2;
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+  animation: page-in 0.15s ease-out;
+}
+.modal {
+  width: 520px;
+  max-width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #e3edda;
+  border-radius: 13px;
+  padding: 25px;
+  box-shadow: 0 30px 80px #17281355;
+}
+.modal.wide {
+  width: 710px;
+}
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #edf1e5;
+  padding-bottom: 17px;
+  margin-bottom: 20px;
+}
+.modal-header h2 {
+  font-size: 18px;
+  color: var(--text);
+}
+.modal-header p {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 7px;
+  line-height: 1.6;
+}
+.modal-form .field input,
+.modal-form .field textarea,
+.modal-form .field select {
+  font-size: 11px;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 9px;
+  border-top: 1px solid #ebf0e0;
+  flex-wrap: wrap;
+}
+.modal-actions .btn {
+  font-size: 10px;
+}
+.confirm-message {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.question-prompt {
+  border: 1px solid #e9efd9;
+  background: #f8fbf1;
+  border-radius: 7px;
+  padding: 13px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 17px;
+}

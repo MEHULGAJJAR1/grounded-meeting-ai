@@ -1,0 +1,49 @@
+.....................................................................    [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.14-final-0 _______________
+
+Name                                           Stmts   Miss  Cover   Missing
+----------------------------------------------------------------------------
+backend/app/__init__.py                            0      0   100%
+backend/app/config.py                             61      8    87%   47-52, 56, 58
+backend/app/database.py                           28      4    86%   17-19, 21
+backend/app/main.py                              109     21    81%   38-39, 41, 58, 68-71, 76, 116, 188-195, 226-227, 244-250
+backend/app/models/__init__.py                     2      0   100%
+backend/app/models/entities.py                   188      0   100%
+backend/app/routers/__init__.py                    0      0   100%
+backend/app/routers/actions.py                   105     13    88%   59, 61, 65-67, 69-71, 73, 75-76, 78-79
+backend/app/routers/auth.py                       71      3    96%   102, 127-128
+backend/app/routers/dashboard.py                  59      3    95%   160, 168-174
+backend/app/routers/development.py                32      9    72%   28-39, 47-49
+backend/app/routers/documents.py                 115      9    92%   37, 39-41, 46, 51, 134-135, 179
+backend/app/routers/exports.py                    19      1    95%   23
+backend/app/routers/meetings.py                   88      6    93%   58, 105-107, 139, 172
+backend/app/routers/search.py                     17      0   100%
+backend/app/schemas/__init__.py                    0      0   100%
+backend/app/schemas/api.py                       161     12    93%   39, 114, 158-160, 175, 180, 199-201, 215, 217
+backend/app/schemas/intelligence.py              104      0   100%
+backend/app/services/__init__.py                   0      0   100%
+backend/app/services/ai_service.py                38      6    84%   57, 79, 84, 100, 108-117
+backend/app/services/document_parser.py          101     18    82%   23, 30, 34, 36, 38, 51, 53, 57, 75, 98, 105, 121, 124, 127-128, 133, 137, 145
+backend/app/services/embeddings.py                50     19    62%   65-86, 91
+backend/app/services/exports.py                  166      6    96%   76, 78, 88, 130, 240, 291
+backend/app/services/grounding.py                216     26    88%   92, 106, 114, 229-231, 251, 264, 315, 317-330, 401-419, 424-434, 466-474, 476-489
+backend/app/services/invalidation.py              21      0   100%
+backend/app/services/local_extractor.py          114      2    98%   81, 262
+backend/app/services/notification_service.py      53     14    74%   25-36, 70-71
+backend/app/services/preprocessing.py             67      3    96%   117, 127, 129
+backend/app/services/presenter.py                 15      0   100%
+backend/app/services/processing.py               167     19    89%   59, 61, 73, 77, 240-241, 319-320, 323-327, 331-332, 342-345
+backend/app/services/rag.py                      179     31    83%   66, 68-71, 80, 92, 98, 100, 151-152, 174, 205-248, 273, 298-299, 312, 335, 338, 381-387, 418, 455, 482-483
+backend/app/services/seed_data.py                 38      0   100%
+backend/app/services/summarizer.py                42      3    93%   23, 80, 99
+backend/app/utils/__init__.py                      0      0   100%
+backend/app/utils/access.py                       18      0   100%
+backend/app/utils/logging.py                      19      1    95%   31
+backend/app/utils/rate_limit.py                   20      4    80%   20-22, 25
+backend/app/utils/security.py                     40      1    98%   27
+backend/app/utils/time.py                          4      0   100%
+----------------------------------------------------------------------------
+TOTAL                                           2527    242    90%
+Coverage XML written to file docs/backend-coverage.xml
+69 passed in 27.48s

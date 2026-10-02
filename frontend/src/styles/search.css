@@ -1,0 +1,237 @@
+.semantic-search-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 25px 26px;
+  margin-bottom: 26px;
+  border-color: #e0e9d3;
+}
+.semantic-search-icon {
+  height: 47px;
+  width: 47px;
+  border: 1px solid #e2ecd4;
+  background: #f0f6e6;
+  color: var(--muted);
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.semantic-search-card > form {
+  flex: 1;
+  min-width: 0;
+}
+.semantic-input {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.semantic-input > input {
+  font-size: 15px;
+  border: none;
+  background: transparent;
+  padding: 9px 0;
+  box-shadow: none;
+  font-weight: 400;
+  min-width: 0;
+}
+.semantic-input > input::placeholder {
+  color: var(--muted);
+}
+.semantic-input > .btn {
+  min-width: 95px;
+  flex-shrink: 0;
+}
+.search-options {
+  border-top: 1px solid #edf2e4;
+  margin-top: 13px;
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+.search-options > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  color: var(--muted);
+}
+.search-options > select {
+  font-size: 9px;
+  width: auto;
+  max-width: 210px;
+  background: #fcfef8;
+  padding: 6px 25px 6px 8px;
+  color: var(--muted);
+  border-color: #e8efdb;
+}
+.search-options .search-engine {
+  margin-left: auto;
+  color: var(--muted);
+}
+.search-intro {
+  padding: 35px 20px 50px;
+  max-width: 710px;
+  margin: 0 auto;
+  text-align: center;
+}
+.search-intro .eyebrow {
+  font-size: 8px;
+  color: var(--muted);
+}
+.search-intro h2 {
+  font-size: 25px;
+  color: var(--text);
+  letter-spacing: -0.7px;
+}
+.search-intro > p {
+  font-size: 11px;
+  color: var(--muted);
+  max-width: 430px;
+  margin: 13px auto 27px;
+  line-height: 1.75;
+}
+.search-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.search-examples > button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 17px;
+  border: 1px solid #e5edda;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 11px;
+  text-align: left;
+  transition:
+    border 0.15s,
+    background 0.15s;
+}
+.search-examples > button > span {
+  flex: 1;
+}
+.search-examples > button > svg:last-child {
+  color: var(--muted);
+}
+.search-examples > button:hover {
+  border-color: #d0e3bc;
+  background: #f9fcf5;
+  color: var(--muted);
+}
+.search-results-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+.search-results-summary strong {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+}
+.search-results-summary small {
+  font-size: 9px;
+  color: var(--muted);
+}
+.search-results-summary .text-btn {
+  margin-left: auto;
+  font-size: 10px;
+}
+.search-result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.search-result {
+  padding: 20px 23px;
+}
+.search-result-top {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 12px;
+}
+.source-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1px solid #e7efdb;
+  background: #f3f8e9;
+  color: var(--muted);
+  font-size: 9px;
+  flex-shrink: 0;
+}
+.retrieval-score {
+  margin-left: auto;
+  font-size: 9px;
+  color: var(--muted);
+}
+.search-result-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+}
+.search-result-title h3 {
+  font-size: 14px;
+  color: var(--text);
+}
+.search-result-title:hover h3 {
+  color: var(--text);
+}
+.source-meta {
+  font-size: 9px;
+  color: var(--muted);
+  display: block;
+  margin-top: 7px;
+}
+.search-result-excerpt {
+  white-space: pre-wrap;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+  background: #fbfdf7;
+  border: 1px solid #ecf2e1;
+  border-left: 2px solid #d6e4c5;
+  border-radius: 6px;
+  padding: 15px 17px;
+  margin: 15px 0;
+  overflow-wrap: anywhere;
+  max-height: 550px;
+  overflow: auto;
+}
+.source-record-provenance {
+  font-size: 8px;
+  color: var(--muted);
+}
+.search-result-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  align-items: center;
+  margin-top: 12px;
+}
+.search-result-footer .text-btn {
+  font-size: 10px;
+}
+.search-note {
+  font-size: 9px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-top: 19px;
+}

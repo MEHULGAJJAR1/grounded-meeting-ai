@@ -1,0 +1,17 @@
+@import "@fontsource/dm-sans/latin-400.css";
+@import "@fontsource/dm-sans/latin-500.css";
+@import "@fontsource/dm-sans/latin-600.css";
+@import "@fontsource/dm-sans/latin-700.css";
+
+@import "./styles/base.css";
+@import "./styles/layout.css";
+@import "./styles/workspace.css";
+@import "./styles/forms.css";
+@import "./styles/meeting-detail.css";
+@import "./styles/feedback.css";
+@import "./styles/documents.css";
+@import "./styles/search.css";
+@import "./styles/assistant.css";
+@import "./styles/settings.css";
+@import "./styles/auth.css";
+@import "./styles/responsive.css";

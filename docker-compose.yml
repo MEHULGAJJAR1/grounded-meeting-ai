@@ -1,0 +1,51 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-grounded}
+      POSTGRES_DB: ${POSTGRES_DB:-grounded}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run python scripts/configure.py first}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: .
+      target: backend
+    env_file: .env
+    environment:
+      APP_ENV: production
+      ALLOW_DEMO_DATA: "false"
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-grounded}:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-grounded}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?Run python scripts/configure.py first}
+      UPLOAD_DIR: /app/uploads
+      CORS_ORIGINS: http://localhost:8080,http://localhost:8000
+    volumes:
+      - uploads_data:/app/uploads
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      target: frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  uploads_data:

@@ -1,0 +1,23 @@
+
+> grounded-meeting-intelligence@1.0.0 build
+> vite build
+
+vite v6.4.3 building for production...
+transforming...
+✓ 2291 modules transformed.
+rendering chunks...
+computing gzip size...
+web/index.html                                        0.81 kB │ gzip:   0.43 kB
+web/assets/dm-sans-latin-400-normal-COF6noiJ.woff2   14.12 kB
+web/assets/dm-sans-latin-600-normal-DrBIvsIy.woff2   14.14 kB
+web/assets/dm-sans-latin-700-normal-1DREuLwQ.woff2   14.30 kB
+web/assets/dm-sans-latin-500-normal-kGSpR5A9.woff2   14.31 kB
+web/assets/dm-sans-latin-600-normal-DOZeTYVF.woff    18.47 kB
+web/assets/dm-sans-latin-400-normal-DmRB7q_B.woff    18.53 kB
+web/assets/dm-sans-latin-700-normal-ryGpXDOP.woff    18.61 kB
+web/assets/dm-sans-latin-500-normal-DN3Amd4H.woff    18.66 kB
+web/assets/index-C35z73JE.css                        94.85 kB │ gzip:  18.90 kB
+web/assets/vendor-DXtnuAOL.js                       182.04 kB │ gzip:  59.99 kB
+web/assets/index-BuhHpPFh.js                        197.00 kB │ gzip:  58.47 kB
+web/assets/charts-CWINw0pg.js                       421.54 kB │ gzip: 113.81 kB
+✓ built in 6.17s

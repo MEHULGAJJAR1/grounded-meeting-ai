@@ -1,0 +1,5 @@
+Docker Compose configuration validation passed.
+Services:
+db
+backend
+frontend

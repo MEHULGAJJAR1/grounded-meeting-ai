@@ -1,0 +1,11 @@
+usage: live_openai_smoke.py [-h] [--confirm-live]
+
+Explicitly consented, billable OpenAI integration check using fictional data.
+Uses a disposable SQLite database, real provider SDK calls, production
+processing and tenant-scoped RAG. Does not print keys, tokens, passwords or
+transcript bodies.
+
+options:
+  -h, --help      show this help message and exit
+  --confirm-live  Consent to real OpenAI requests and account charges for
+                  fictional test data

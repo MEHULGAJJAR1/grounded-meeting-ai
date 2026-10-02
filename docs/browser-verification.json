@@ -1,0 +1,201 @@
+{
+  "base_url": "http://127.0.0.1:8000",
+  "flows": [
+    "registration and authenticated empty dashboard",
+    "meeting creation, persisted background processing, explicit owners/deadlines and missing-field fallbacks",
+    "source evidence expansion and transcript line navigation",
+    "manual action creation, notes and real completion state",
+    "risk resolution and human-provided question answers",
+    "PDF, DOCX, JSON, Markdown and CSV browser downloads",
+    "My Tasks filtering and action editing",
+    "real TXT upload, extraction preview, attachment, stale-result invalidation and reprocessing",
+    "hybrid retrieval, own-history assistant answers and source citations",
+    "profile update, JWT logout/revocation and re-login",
+    "development sample data and responsive navigation"
+  ],
+  "responsive_views": [
+    {
+      "route": "dashboard",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "meetings",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "actions",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "documents",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "search",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "assistant",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "settings",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "meetings/new",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "meetings/43a3bb43-da5d-4fd5-8105-db9887e3a632",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "dashboard",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "meetings",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "actions",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "documents",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "search",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "assistant",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "settings",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "meetings/new",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "meetings/43a3bb43-da5d-4fd5-8105-db9887e3a632",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "dashboard",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "meetings",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "actions",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "documents",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "search",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "assistant",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "settings",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "meetings/new",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "meetings/43a3bb43-da5d-4fd5-8105-db9887e3a632",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "dashboard",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "meetings",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "actions",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "documents",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "search",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "assistant",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "settings",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "meetings/new",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "meetings/43a3bb43-da5d-4fd5-8105-db9887e3a632",
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "browser_errors": [],
+  "api_errors": [],
+  "status": "passed"
+}
